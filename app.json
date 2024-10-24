@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "authenticationApp",
+    "slug": "authenticationApp",
+    "owner": "thimesha",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "authenticationApp",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "1066436554858291",
+          "clientToken": "9ebeb3d467161e066b5a0631a5a9fb91",
+          "displayName": "MediLink"
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "915d38fd-26c3-44d4-aaa8-b05009ec9561"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/915d38fd-26c3-44d4-aaa8-b05009ec9561"
+    }
+  }
+}
