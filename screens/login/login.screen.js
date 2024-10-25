@@ -6,6 +6,8 @@ import { useNavigation } from '@react-navigation/native';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import { AccessToken, LoginManager } from 'react-native-fbsdk-next';
+import { GOOGLE_androidClientId, GOOGLE_iosClientId, GOOGLE_expoClientId } from '@env';
+
 
 WebBrowser.maybeCompleteAuthSession(); // To handle the web browser behavior
 
@@ -44,14 +46,13 @@ const LoginScreen = () => {
         }
     };
 
-    // Google authentication session hook
     const [request, response, promptAsync] = Google.useAuthRequest({
-        expoClientId: '891162909037-o6oc3ipnecmtnu1brsm8dv1048s8qlmn.apps.googleusercontent.com',
-        iosClientId: '1:930929626458:ios:74887b80f7c0418b24b763',
-        androidClientId: '1:930929626458:android:e39c3e7f0683aaee24b763',
-        webClientId: '1:930929626458:web:70c02f60cd9b544a24b763',
+        expoClientId: GOOGLE_expoClientId,
+        iosClientId: GOOGLE_iosClientId,
+        androidClientId: GOOGLE_androidClientId,
+        webClientId: GOOGLE_expoClientId,
     });
-
+    
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {
             if (user) {

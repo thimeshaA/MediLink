@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "930929626458",
+    "project_id": "patientdoctorloginflow",
+    "storage_bucket": "patientdoctorloginflow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930929626458:android:3513e12b9a8bf45b24b763",
+        "android_client_info": {
+          "package_name": "com.MediLinkAuth.MediLink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930929626458-9t7conif24pa78t2mhmj1ktla6llh7ct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MediLinkAuth.MediLink",
+            "certificate_hash": "92bde423a269d10eec5de7ac6e5257a4df83df96"
+          }
+        },
+        {
+          "client_id": "930929626458-u0klcbmi9j5f0lg8a5j9isoq92hcu61a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9dB5aDROVv51XHulf5uVrJqc3Jw5tTKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930929626458-u0klcbmi9j5f0lg8a5j9isoq92hcu61a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "930929626458-oeqt9n5ciptic8kcdj2n22a6mprdtebj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.medilink-loginflow.MediLink"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

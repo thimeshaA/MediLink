@@ -7,7 +7,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "scheme": "authenticationApp",
+    "scheme": ["authenticationApp"],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -24,13 +24,16 @@
       ]
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+       "bundleIdentifier": "com.MediLinkAuth.MediLink"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.MediLinkAuth.MediLink",
+       "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png",
