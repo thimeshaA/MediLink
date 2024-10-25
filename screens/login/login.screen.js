@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, KeyboardAvoidingView, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, KeyboardAvoidingView, TextInput, TouchableOpacity, Image } from 'react-native';
 import { auth } from '../../firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithCredential, FacebookAuthProvider } from 'firebase/auth';
 import { useNavigation } from '@react-navigation/native';
@@ -100,7 +100,14 @@ const LoginScreen = () => {
 
     return (
         <KeyboardAvoidingView className="flex-1 justify-center items-center">
-            <View className="w-4/5">
+            <View className="w-4/5  ">
+            <View className="flex-1 justify-center items-center my-20 bg-red-500 ">
+      <Image
+        source={require('../../assets/medilink.png')}
+        className="w-full h-auto" // Use className to apply Tailwind CSS classes
+        resizeMode="contain" // or "cover"
+      />
+    </View>
                 <TextInput
                     placeholder='Enter your Email'
                     className="bg-white px-4 py-2 rounded-lg mt-2"
